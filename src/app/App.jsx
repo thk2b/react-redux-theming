@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import css from './App.css';
 
-import { ThemeList } from '../themes'
-import { Theme } from '../theme'
+import { ActiveTheme, ThemeList } from '../themes'
 
-export default ({ themes }) => (
-  <Theme themes={themes}>
+export default ( ) => (
+  <ActiveTheme>
     <div className={css.App}>
       <header className={css.AppHeader}>
         <img src={logo} className={css.AppLogo} alt="logo" />
@@ -15,5 +14,5 @@ export default ({ themes }) => (
       </header>
       <ThemeList />
     </div>
-  </Theme>
+  </ActiveTheme>
 )
