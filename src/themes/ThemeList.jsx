@@ -23,7 +23,7 @@ const Themes = ({ themes, setTheme }) => {
             >
                 <Button
                     onClick={ e => setTheme(id)}
-                    name={theme.name}
+                    text={theme.name}
                 />
             </li>
         )}
