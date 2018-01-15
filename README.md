@@ -4,7 +4,7 @@ A basic proof-of-concept for theming react-redux apps using css modules and css 
 
 ## The idea
 
-The redux should contain the current active theme, and a list of themes (cf. `src/themes/reducer.js`). 
+The redux store should contain the current active theme, and a list of themes (cf. `src/themes/reducer.js`). 
  
 The `ActiveTheme` container (via `react-redux`) has access to the active theme. (cf. `src/themes/ActiveTheme.jsx`)
 
