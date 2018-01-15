@@ -5,7 +5,8 @@ const DEFAULT = {
     list: [
         { name: 'light' },
         { name: 'dark'  },
-        { name: 'blue'  }
+        { name: 'blue'  },
+        { name: 'green'  },
     ]
     
 }

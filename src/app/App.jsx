@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import css from './App.css';
 
-import { Theme, ThemeList } from '../themes'
+import { ThemeList } from '../themes'
+import { Theme } from '../theme'
 
 export default ({ themes }) => (
   <Theme themes={themes}>

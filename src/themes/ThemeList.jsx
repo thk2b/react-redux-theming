@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import ThemeButton from './ThemeButton.jsx'
+import { Button } from '../button'
+
 import { setTheme } from './actions'
 import css from './ThemeList.css'
 
@@ -18,7 +19,7 @@ const Themes = ({ themes, setTheme }) => {
             (theme, id) => <li
                 key={theme.name}
             >
-                <ThemeButton
+                <Button
                     onClick={ e => setTheme(id)}
                     name={theme.name}
                 />
