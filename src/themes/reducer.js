@@ -8,7 +8,6 @@ const DEFAULT = {
         { name: 'blue'  },
         { name: 'green'  },
     ]
-    
 }
 
 export default function (state = DEFAULT, action){

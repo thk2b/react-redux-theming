@@ -9,7 +9,9 @@ import css from './ThemeList.css'
 const mapStateToProps = ({ themes }) => ({ themes })
 
 const mapDispatchToProps = ( dispatch ) => ({
-    setTheme: theme => dispatch(setTheme(theme))
+    setTheme(theme){
+        dispatch(setTheme(theme))
+    }
 })
 
 const Themes = ({ themes, setTheme }) => {
