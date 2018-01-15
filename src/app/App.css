@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary)
 }
 
 .AppLogo {
@@ -8,10 +11,9 @@
 }
 
 .AppHeader {
-  background-color: #222;
-  height: 150px;
+  background-color: var(--secondary);
   padding: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 .AppTitle {

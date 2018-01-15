@@ -1,14 +1,17 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-import ThemeButton from './ThemeButton.jsx'
+import themes from './themes.css'
 
-export default ({ themes=[], setTheme=e=>{} }) => (
-    <ul>
-        {themes.map(
-            theme => <ThemeButton 
-                onClick={ e => setTheme(theme)}
-                text={theme.name}
-            />
-        )}
-    </ul>
+const mapStateToProps = ({ themes }, ownProps) => ({
+    name: themes.list[themes.active].name,
+    ...ownProps
+})
+
+const Theme = ({ name, children }) => (
+    <div className={themes[name]}>
+      {children}
+    </div>
 )
+
+export default connect(mapStateToProps)(Theme) 
